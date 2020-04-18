@@ -2,6 +2,9 @@
 
 <h2><%= @task.details %></h2>
 
+<p>Mark task as complete</p>
+
 <h3><%=@task.title %></h3>
 
 <%= link_to "Back to List", tasks_path %>
+<%= link_to "Edit Task", edittask_path(@task) %>
